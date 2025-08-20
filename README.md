@@ -1,9 +1,9 @@
-## 🌿 spy cat agency API (Golang + Gin + PostgreSQL)
+### 🌿 spy cat agency API (Golang + Gin + PostgreSQL)
 
 проєкт реалізує RESTful API для керування котами, місіями, та цілями згідно технічного завдання. 
 
 
-## 🚀запуск
+### 🚀запуск
 
 ```
 docker compose -f docker-compose.yml up -d
@@ -24,7 +24,7 @@ go run .
 
 
 
-## 📬postman колекція
+### 📬postman колекція
 
 вся документація для тестування API доступна через Postman Collection у файлі sca_collection.json 📦  
 
