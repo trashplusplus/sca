@@ -1,4 +1,4 @@
-## 🌿 spying cat agency API (Golang + Gin + PostgreSQL)
+## 🌿 spy cat agency API (Golang + Gin + PostgreSQL)
 
 проєкт реалізує RESTful API для керування котами, місіями, та цілями згідно технічного завдання. 
 
