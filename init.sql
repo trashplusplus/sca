@@ -25,4 +25,4 @@ CREATE TABLE IF NOT EXISTS targets (
     UNIQUE (mission_id, name)
 );
 
-insert into cats (name, experience, breed, salary) values ('Ryzhyk', 4, 'Siamese', 2008);
+insert into cats (id, name, experience, breed, salary) values (1, 'Ryzhyk', 4, 'Siamese', 2008);
