@@ -6,6 +6,7 @@
 ### 🚀запуск
 
 ```
+git clone https://github.com/trashplusplus/sca.git
 docker compose -f docker-compose.yml up -d
 go mod init sca
 go mod tidy
