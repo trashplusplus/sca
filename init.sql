@@ -24,3 +24,5 @@ CREATE TABLE IF NOT EXISTS targets (
     complete BOOLEAN DEFAULT FALSE,
     UNIQUE (mission_id, name)
 );
+
+insert into cats (name, experience, breed, salary) values ('Ryzhyk', 4, 'Siamese', 2008);
