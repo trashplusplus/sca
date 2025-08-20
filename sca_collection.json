@@ -1,0 +1,379 @@
+{
+	"info": {
+		"_postman_id": "060370e4-1ae3-4348-abb7-e07d5b7d77a2",
+		"name": "Spying Cat Agency",
+		"description": "Postman collection for Spying Cat Agency API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25170392",
+		"_collection_link": "https://restless-astronaut-680586.postman.co/workspace/SpringKPPKNURE~397804a3-b95a-4a78-8602-d9f08ecedea6/collection/25170392-060370e4-1ae3-4348-abb7-e07d5b7d77a2?action=share&source=collection_link&creator=25170392"
+	},
+	"item": [
+		{
+			"name": "Cat",
+			"item": [
+				{
+					"name": "Create Cat",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"name\": \"Kitty\",\n    \"breed\": \"Siamese\",\n    \"experience\": 2,\n    \"salary\": 100\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/cat/create",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"cat",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Cats",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/cat/list",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"cat",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Cat",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": 13,\n  \"name\": \"Tom\",\n  \"breed\": \"Persian\",\n  \"experience\": 5,\n  \"salary\": 800\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/cat/update",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"cat",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Cat",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/cat/delete/13",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"cat",
+								"delete",
+								"13"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Cat By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/cat/get/12",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"cat",
+								"get",
+								"12"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Target",
+			"item": [
+				{
+					"name": "Complete Target",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/target/complete/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"target",
+								"complete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Target Notes",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"notes\": \"New notes\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/target/update-notes/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"target",
+								"update-notes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Mission",
+			"item": [
+				{
+					"name": "Create Mission",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"cat_id\": 12,\n  \"complete\": false,\n  \"targets\": []\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/mission/create",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"mission",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Missions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/mission/list",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"mission",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Assign Cat To Mission",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"cat_id\": 2\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/mission/1/assign-cat",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"mission",
+								"1",
+								"assign-cat"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Mission By ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/mission/get/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"mission",
+								"get",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Complete Mission",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/mission/complete/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"mission",
+								"complete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Mission",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/mission/delete/55",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"mission",
+								"delete",
+								"55"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Target From Mission",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/mission/delete-target/170",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"mission",
+								"delete-target",
+								"170"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Target To Mission",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Target X\",\n  \"country\": \"USA\",\n  \"notes\": \"High priority\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/mission/add-target/6",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"mission",
+								"add-target",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://127.0.0.1:3535"
+		}
+	]
+}
